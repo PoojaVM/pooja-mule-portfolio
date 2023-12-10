@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Card, ListGroup } from 'react-bootstrap';
 import './WorkExperience.css';
+import { WORK_EXPERIENCES } from '../data';
 const ExperienceCard = ({ experience }) => {
   return (
     <Card className="mb-4">
@@ -21,33 +22,16 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const WorkExperience = () => {
-    const experiences = [
-        {
-          organization: 'West Agile Labs',
-          jobTitle: 'Senior Software Developer',
-          dates: 'June 2018 - July 2022',
-          responsibilities: ['Achievement 1', 'Achievement 2', 'Achievement 3'],
-        },
-        {
-          organization: 'Belzabar Software Design',
-          jobTitle: 'Computer Scientist',
-          dates: 'January 2020 - Present',
-          responsibilities: ['Achievement 1', 'Achievement 2', 'Achievement 3'],
-        },
-        {
-            organization: 'Persistent Systems Ltd',
-            jobTitle: 'Undergraduate Intern',
-            dates: 'June 2015 - May 2016',
-            responsibilities: ['Achievement 1', 'Achievement 2', 'Achievement 3'],
-        }
-];
+
   return (
-    <Container className="mt-4">
-      <h1 className="work-ex-header">Work Experience</h1>
-      {experiences.map((experience, index) => (
+    <div className='work-ex-container'>
+      <Container className="mt-4">
+        <h1 className="work-ex-header">Work Experience</h1>
+        {WORK_EXPERIENCES.map((experience, index) => (
         <ExperienceCard key={index} experience={experience} />
-      ))}
-    </Container>
+        ))}
+        </Container>
+    </div>
   );
 };
 

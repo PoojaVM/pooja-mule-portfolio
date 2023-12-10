@@ -20,9 +20,10 @@ const Layout = () => {
         <Container fluid>
           <Navbar.Brand as={Link} to="/home" style={{ color: "#EFEFEF" }}>Pooja Mule</Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ml-auto">  {/* ms-auto will align nav items to the right */}
+            <Nav className="ml-auto">
               <Nav.Link as={Link} to="/home#about-me" style={{ color: "#EFEFEF" }}>About me</Nav.Link>
               <Nav.Link as={Link} to="/home#work-experience" style={{ color: "#EFEFEF" }}>Work Experience</Nav.Link>
+              <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Projects</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

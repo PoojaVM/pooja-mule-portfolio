@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProfilePicture } from '../assets';
 import './Home.css';
-import { AboutMe, WorkExperience } from '../components';
+import { AboutMe, Projects, WorkExperience } from '../components';
 
 const Home = () => {
     return (
@@ -18,6 +18,9 @@ const Home = () => {
         </div>
         <div className="work-experience-section animated-section" id="work-experience">
           <WorkExperience />
+        </div>
+        <div className="projects-section animated-section" id="projects">
+          <Projects />
         </div>
       </div>
     );

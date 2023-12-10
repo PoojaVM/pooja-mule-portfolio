@@ -1,20 +1,19 @@
 .about-me-container {
     text-align: center;
     padding: 50px;
-  }
+}
   
-  .about-me-header {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
+.about-me-header {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
   
-  .about-me-content {
-    max-width: 600px;
-    margin: auto;
-  }
+.about-me-content {
+  max-width: 600px;
+  margin: auto;
+}
   
-  .about-me-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
+.about-me-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
