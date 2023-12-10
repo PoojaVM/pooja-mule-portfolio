@@ -18,7 +18,7 @@ const Layout = () => {
     <div style={{ width: "100vw", height: "100vh", padding: 0, color: "white"}}>
       <Navbar expand="sm" bg="primary" style={{ backgroundColor: "#C0C0C0" }}>
         <Container fluid>
-          <Navbar.Brand as={Link} to="/home">Pooja Mule</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/home" style={{ color: "#EFEFEF" }}>Pooja Mule</Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">  {/* ms-auto will align nav items to the right */}
               <Nav.Link as={Link} to="/home#about-me" style={{ color: "#EFEFEF" }}>About me</Nav.Link>
