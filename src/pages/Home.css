@@ -1,6 +1,7 @@
-body {
-    color: white;
+html {
+    scroll-behavior: smooth;
 }
+
 .home-container {
     background-color: black;
     display: flex;
@@ -8,30 +9,52 @@ body {
     align-items: center;
     padding: 20px;
     height: 100vh;
+    overflow: scroll;
   }
   
   .greeting-section {
     text-align: center;
   }
   
+  .animated-section {
+    animation: fadeIn 2s ease-in-out, slideInFromLeft 2s ease-in-out;
+  }
+  
   .greeting-header {
-    font-size: 2em;
-    /* color: #333; */
+    font-size: 3rem;
+    margin-bottom: 20px;
   }
   
   .greeting-text {
     font-size: 1.2em;
-    /* color: #666; */
   }
   
   .profile-picture-section {
     margin-top: 20px;
   }
   
+  .animated-picture {
+    animation: scaleUp 2s ease-in-out;
+  }
+  
   .profile-picture {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%; /* Makes the image round */
-    border: 3px solid #666;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInFromLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes scaleUp {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
   }
   
