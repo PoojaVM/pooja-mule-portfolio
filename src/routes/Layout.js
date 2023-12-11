@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Nav, Navbar, Offcanvas } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import { Logo } from "../assets";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
 const Layout = () => {
@@ -15,20 +17,57 @@ const Layout = () => {
   }, [location]);
 
   return (
-    <div style={{ width: "100vw", height: "100vh", padding: 0, color: "white"}}>
-      <Navbar expand="sm" bg="primary" style={{ backgroundColor: "#C0C0C0" }}>
-        <Container fluid>
-          <Navbar.Brand as={Link} to="/home" style={{ color: "#EFEFEF" }}>Pooja Mule</Navbar.Brand>
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ml-auto">
+    <div style={{ width: "100vw", height: "100vh", padding: 0, color: "white" }}>
+      <Navbar expand="sm" bg="primary" className="main-navbar" style={{ width: "100vw" }}>
+        <Container fluid="md">
+          <Navbar.Brand
+            as={Link}
+            to="/home"
+            style={{
+              color: "#EFEFEF",
+              fontFamily: "playfair-italic",
+              fontSize: "2rem",
+              position: "absolute",
+              // transform: "rotate(-10deg)",
+            }}
+          >
+            Pooja Mule
+            {/* <img src={Logo} alt="Pooja Mule" style={{ height: "4rem", width: "7rem", marginRight: "0.5rem" }} /> */}
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-sm" />
+          <Navbar.Offcanvas
+            id="offcanvasNavbar-expand-sm"
+            aria-labelledby="offcanvasNavbarLabel-expand-sm"
+            placement="start"
+          >
+            {/* <Offcanvas.Header closeButton>
+              <Offcanvas.Title id="offcanvasNavbarLabel-expand-sm">
+                Canvas Cove
+              </Offcanvas.Title>
+            </Offcanvas.Header> */}
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
               <Nav.Link as={Link} to="/home#about-me" style={{ color: "#EFEFEF" }}>About me</Nav.Link>
               <Nav.Link as={Link} to="/home#work-experience" style={{ color: "#EFEFEF" }}>Work Experience</Nav.Link>
               <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Projects</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
+              <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Skills</Nav.Link>
+              <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Recommendations</Nav.Link>
+              <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Contact Me</Nav.Link>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
         </Container>
       </Navbar>
-      <Container fluid>
+      <Container
+        fluid
+        style={{
+          height: "calc(100vh - 62px)",
+          paddingTop: "56px",
+          paddingBottom: "56px",
+          overflow: "auto",
+        }}
+        // className="d-flex justify-content-center"
+      >
         <Outlet />
       </Container>
     </div>
