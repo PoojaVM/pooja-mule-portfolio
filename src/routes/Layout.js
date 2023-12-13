@@ -17,7 +17,7 @@ const Layout = () => {
   }, [location]);
 
   return (
-    <div style={{ width: "100vw", height: "100vh", padding: 0, color: "white" }}>
+    <div style={{ width: "100vw", height: "100vh", padding: 0, color: "white", backgroundColor: "black" }}>
       <Navbar expand="sm" className="main-navbar" style={{ width: "100vw", backgroundColor: "sienna" }}>
         <Container fluid="md">
           <Navbar.Brand

@@ -2,9 +2,22 @@ import React from 'react';
 import { ProfilePicture } from '../assets';
 import './Home.css';
 import { AboutMe, Projects, WorkExperience } from '../components';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Home = () => {
     return (
+      <>
+        <div className="social-media-icons position-fixed top-50 start-10 translate-middle-y">
+          <a href="https://www.linkedin.com/in/pooja-mule-77421092/" target="_blank" rel="noreferrer" className="d-block mb-2">
+            <i className="bi bi-linkedin" style={{ fontSize: '2rem', color: "white" }}></i>
+          </a>
+          <a href="https://github.com/PoojaVM" target="_blank" rel="noreferrer" className="d-block mb-2">
+            <i className="bi bi-github" style={{ fontSize: '2rem', color: "white" }}></i>
+          </a>
+          <a href="https://stackoverflow.com/users/5939393/pooja-mule" target="_blank" rel="noreferrer" className="d-block mb-2">
+            <i className="bi bi-stack-overflow" style={{ fontSize: '2rem', color: "white" }}></i>
+          </a>
+        </div>
       <div className="home-container">
         <div id="intro" className="intro-container">
           <div className="greeting-section animated-section">
@@ -25,6 +38,7 @@ const Home = () => {
           <Projects />
         </div>
       </div>
+      </>
     );
   };
   
