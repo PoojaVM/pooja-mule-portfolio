@@ -18,11 +18,11 @@ const Layout = () => {
 
   return (
     <div style={{ width: "100vw", height: "100vh", padding: 0, color: "white" }}>
-      <Navbar expand="sm" bg="primary" className="main-navbar" style={{ width: "100vw" }}>
+      <Navbar expand="sm" className="main-navbar" style={{ width: "100vw", backgroundColor: "sienna" }}>
         <Container fluid="md">
           <Navbar.Brand
             as={Link}
-            to="/home"
+            to="/home#intro"
             style={{
               color: "#EFEFEF",
               fontFamily: "playfair-italic",
@@ -62,8 +62,6 @@ const Layout = () => {
         fluid
         style={{
           height: "calc(100vh - 62px)",
-          paddingTop: "56px",
-          paddingBottom: "56px",
           overflow: "auto",
         }}
         // className="d-flex justify-content-center"
