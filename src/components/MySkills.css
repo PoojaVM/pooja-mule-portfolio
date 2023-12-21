@@ -1,3 +1,14 @@
+.skills-header {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.skills-container {
+    text-align: center;
+    padding: 50px;
+}
+
 .my-skills-container {
     padding: 2rem 0;
   }

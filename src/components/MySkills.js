@@ -33,8 +33,9 @@ const skills = [
 
 const MySkills = () => {
   return (
+    <div className='skills-container'>
+    <h1 className="skills-header">Skills</h1>
     <Container className="my-skills-container text-center">
-      <h2>Skills</h2>
       <Row>
         {skills.map((skill, idx) => (
           <Col key={idx} xs={6} md={4} lg={3} className="my-2">
@@ -46,6 +47,7 @@ const MySkills = () => {
         ))}
       </Row>
     </Container>
+    </div>
   );
 };
 
