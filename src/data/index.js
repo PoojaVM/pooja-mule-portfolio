@@ -1,10 +1,15 @@
 export const PROJECTS = [
     {
-        name: 'Pooja Mule Portfolio',
-        description: 'A portfolio website built using ReactJS and Bootstrap',
-        link: 'http://poojamule.com/',
-        github: 'https://github.com/PoojaVM/pooja-mule-portfolio',
-        technologies: ['ReactJS', 'Bootstrap', 'HTML', 'CSS', 'Firebase']
+        name: 'New Leaf',
+        description: 'A web application that allows users to connect with expert therapists to get help with their mental health',
+        github: 'https://github.com/chetan-plrch/CS546-Final-Project',
+        technologies: ['ReactJS', 'Bootstrap', 'HTML', 'CSS', 'NodeJS', 'ExpressJS', 'MongoDB']
+    },
+    {
+        name: 'CanvasCove',
+        description: 'A social media platform for artists to share their work',
+        github: 'https://github.com/PoojaVM/CanvasCove',
+        technologies: ['ReactJS', 'Bootstrap', 'HTML', 'CSS', 'NodeJS', 'ExpressJS', 'MongoDB']
     },
     {
         name: 'NEO Earth Classification',
@@ -24,12 +29,6 @@ export const PROJECTS = [
         github: 'https://github.com/PoojaVM/CS-513-KDD-Final-Project',
         technologies: ['Python', 'Scikit-learn', 'Pandas', 'Numpy', 'Matplotlib']
     },
-    {
-        name: 'CanvasCove',
-        description: 'A social media platform for artists to share their work',
-        github: 'https://github.com/PoojaVM/CanvasCove',
-        technologies: ['ReactJS', 'Bootstrap', 'HTML', 'CSS', 'NodeJS', 'ExpressJS', 'MongoDB']
-    }
 ];
 
 export const WORK_EXPERIENCES = [
