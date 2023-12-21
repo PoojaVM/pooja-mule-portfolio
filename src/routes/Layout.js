@@ -18,7 +18,15 @@ const Layout = () => {
 
   return (
     <div style={{ width: "100vw", height: "100vh", padding: 0, color: "white", backgroundColor: "black" }}>
-      <Navbar expand="sm" className="main-navbar" style={{ width: "100vw", backgroundColor: "#B76E79" }}>
+      <Navbar
+        expand="sm"
+        className="main-navbar"
+        style={{
+          width: "100vw",
+          backgroundColor: "#B76E79",
+          boxShadow: "0 4px 6px rgba(255, 255, 255, 0.6)", // subtle elevation effect
+        }}
+      >
         <Container fluid="md">
           <Navbar.Brand
             as={Link}
