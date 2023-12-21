@@ -1,11 +1,18 @@
 import React from 'react';
-import { ProfilePicture } from '../assets';
+import { ProfilePicture, BGImage } from '../assets';
 import './Home.css';
-import { AboutMe, Projects, WorkExperience } from '../components';
+import { AboutMe, Projects, WorkExperience, MySkills, ContactMe } from '../components';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Home = () => {
+  const backgroundStyle = {
+    backgroundImage: `url(${BGImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+    // Other styles can be added here as needed
+  };
     return (
+      // style={backgroundStyle}
       <>
         <div className="social-media-icons position-fixed top-50 start-10 translate-middle-y">
           <a href="https://www.linkedin.com/in/pooja-mule-77421092/" target="_blank" rel="noreferrer" className="d-block mb-2">
@@ -36,6 +43,12 @@ const Home = () => {
         </div>
         <div className="projects-section animated-section" id="projects">
           <Projects />
+        </div>
+        <div className="projects-section animated-section" id="my-skills">
+          <MySkills />
+        </div>
+        <div className="contact-me-section animated-section" id="contact-me">
+          <ContactMe />
         </div>
       </div>
       </>

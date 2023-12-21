@@ -18,7 +18,7 @@ const Layout = () => {
 
   return (
     <div style={{ width: "100vw", height: "100vh", padding: 0, color: "white", backgroundColor: "black" }}>
-      <Navbar expand="sm" className="main-navbar" style={{ width: "100vw", backgroundColor: "sienna" }}>
+      <Navbar expand="sm" className="main-navbar" style={{ width: "100vw", backgroundColor: "#B76E79" }}>
         <Container fluid="md">
           <Navbar.Brand
             as={Link}
@@ -50,9 +50,8 @@ const Layout = () => {
               <Nav.Link as={Link} to="/home#about-me" style={{ color: "#EFEFEF" }}>About me</Nav.Link>
               <Nav.Link as={Link} to="/home#work-experience" style={{ color: "#EFEFEF" }}>Work Experience</Nav.Link>
               <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Projects</Nav.Link>
-              <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Skills</Nav.Link>
-              <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Recommendations</Nav.Link>
-              <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Contact Me</Nav.Link>
+              <Nav.Link as={Link} to="/home#my-skills" style={{ color: "#EFEFEF" }}>Skills</Nav.Link>
+              <Nav.Link as={Link} to="/home#contact-me" style={{ color: "#EFEFEF" }}>Contact Me</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

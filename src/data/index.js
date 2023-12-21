@@ -57,7 +57,7 @@ export const WORK_EXPERIENCES = [
     {
       organization: 'Belzabar Software Design',
       jobTitle: 'Computer Scientist',
-      dates: 'January 2020 - Present',
+      dates: 'June 2016 - January 2018',
       responsibilities: [
         'Migrated an employee management application with more than 30 features from Angular 1 to Angular 2',
         'Refactored application to reduce load time by 25%',
