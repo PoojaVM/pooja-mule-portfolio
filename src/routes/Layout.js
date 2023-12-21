@@ -25,7 +25,7 @@ const Layout = () => {
             to="/home#intro"
             style={{
               color: "#EFEFEF",
-              fontFamily: "playfair-italic",
+              fontFamily: "cursive",
               fontSize: "2rem",
               position: "absolute",
               // transform: "rotate(-10deg)",
