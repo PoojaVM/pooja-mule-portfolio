@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
                 {/* {project.link && 
                     <Button variant="primary" href={project.link} target="_blank">Visit Site</Button>} */}
                 {project.github && 
-                    <Button href={project.github} target="_blank" className="ml-2">GitHub</Button>}
+                    <Button href={project.github} target="_blank" className='primary-button'>GitHub</Button>}
             </Card.Body>
             <ListGroup className="list-group-flush">
                 {project.technologies.map((tech, index) => (

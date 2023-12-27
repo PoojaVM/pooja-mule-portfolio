@@ -41,7 +41,7 @@ const ContactMe = () => {
           setShowSuccessMessage(false);
         }, 10000);  // Hide the message after 5 seconds
     } catch (error) {
-        setError('Could not send message at the moment. You can email me directly using the top button');
+        setError('Could not send message at the moment. You can email me directly using the button on top.');
     }
   };
 
@@ -52,31 +52,31 @@ const ContactMe = () => {
       <Row className="justify-content-center">
         <Col md={8}>
           <a href="mailto:poojavm1595@gmail.com" className="d-block mb-3">
-            <Button variant="primary">Email Me Directly</Button>
+            <Button variant="primary" className='primary-button'>Email Me Directly</Button>
           </a>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="contactForm.Name">
-              <Form.Label>Name</Form.Label>
+              <Form.Label className='label'>Name</Form.Label>
               <Form.Control 
                 type="text" 
-                name="name" 
+                name="name"
                 value={state.name} 
                 onChange={handleChange} 
-                placeholder="Enter your name" 
+                placeholder="Your name" 
               />
             </Form.Group>
             <Form.Group controlId="contactForm.Email">
-              <Form.Label>Email</Form.Label>
+              <Form.Label className='label'>Email</Form.Label>
               <Form.Control 
                 type="email" 
                 name="email" 
                 value={state.email} 
                 onChange={handleChange} 
-                placeholder="Enter your email" 
+                placeholder="Your email" 
               />
             </Form.Group>
             <Form.Group controlId="contactForm.Subject">
-              <Form.Label>Subject</Form.Label>
+              <Form.Label className='label'>Subject</Form.Label>
               <Form.Control 
                 type="text" 
                 name="subject" 
@@ -86,7 +86,7 @@ const ContactMe = () => {
               />
             </Form.Group>
             <Form.Group controlId="contactForm.Message">
-              <Form.Label>Message</Form.Label>
+              <Form.Label className='label'>Message</Form.Label>
               <Form.Control 
                 as="textarea" 
                 name="message" 
@@ -96,8 +96,11 @@ const ContactMe = () => {
                 placeholder="Your message" 
               />
             </Form.Group>
-            <Button variant="primary" type="submit" className="mt-3"
-            disabled={!state.name || !state.email || !state.subject || !state.message}
+            <Button
+              variant="primary"
+              type="submit"
+              className="mt-3 primary-button"
+              disabled={!state.name || !state.email || !state.subject || !state.message}
             >
               Send Message
             </Button>

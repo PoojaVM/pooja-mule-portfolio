@@ -9,12 +9,18 @@
     padding: 50px;
 }
 
+.label {
+  color: black;
+}
+
 .contact-me-container {
     background: #ffffff; /* or any color that fits your design */
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 60vw;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
+    background-color: rgb(233, 185, 195);
   }
   
   .contact-me-container h2 {
