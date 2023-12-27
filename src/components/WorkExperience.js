@@ -4,7 +4,7 @@ import './WorkExperience.css';
 import { WORK_EXPERIENCES } from '../data';
 const ExperienceCard = ({ experience }) => {
   return (
-    <Card className="mb-4">
+    <Card className="mb-4 border bg-color">
       <Card.Header>
         <h5>{experience.organization}</h5>
         <p className="mb-0">{experience.jobTitle}</p>
@@ -13,7 +13,7 @@ const ExperienceCard = ({ experience }) => {
       <Card.Body>
         <ListGroup variant="flush">
           {experience.responsibilities.map((responsibility, index) => (
-            <ListGroup.Item key={index}>{responsibility}</ListGroup.Item>
+            <ListGroup.Item key={index} className='bg-color'>{responsibility}</ListGroup.Item>
           ))}
         </ListGroup>
       </Card.Body>

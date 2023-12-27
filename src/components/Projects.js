@@ -5,7 +5,7 @@ import './Projects.css';
 
 const ProjectCard = ({ project }) => {
     return (
-        <Card style={{ width: '18rem' }} className="mb-4">
+        <Card style={{ width: '18rem' }} className="mb-4 border bg-color">
             <Card.Body>
                 <Card.Title>{project.name}</Card.Title>
                 <Card.Text>
@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
             </Card.Body>
             <ListGroup className="list-group-flush">
                 {project.technologies.map((tech, index) => (
-                    <ListGroupItem key={index}>{tech}</ListGroupItem>
+                    <ListGroupItem key={index} className='bg-color'>{tech}</ListGroupItem>
                 ))}
             </ListGroup>
         </Card>

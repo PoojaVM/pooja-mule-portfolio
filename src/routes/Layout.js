@@ -25,7 +25,7 @@ const Layout = () => {
         style={{
           width: "100vw",
           backgroundColor: "#B76E79",
-          boxShadow: "0 4px 6px rgba(255, 255, 255, 0.6)", // subtle elevation effect
+          boxShadow: "0 0 10px 5px rgba(255, 255, 255, 0.6)", // subtle elevation effect
         }}
       >
         <Container fluid="md">
