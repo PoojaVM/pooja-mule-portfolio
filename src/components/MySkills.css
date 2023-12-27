@@ -18,7 +18,8 @@
   }
   
   .skill-icon {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 4rem; /* Adjust the size of icons */
@@ -31,15 +32,31 @@
   
   /* Each skill icon will have a unique animation delay to create a staggered effect */
   .skill-0 { animation-delay: 0.2s; }
-  .skill-1 { animation-delay: 0.3s; }
-  .skill-2 { animation-delay: 0.4s; }
-  .skill-3 { animation-delay: 0.5s; }
-  .skill-4 { animation-delay: 0.6s; }
-  .skill-5 { animation-delay: 0.7s; }
-  .skill-6 { animation-delay: 0.8s; }
-  .skill-7 { animation-delay: 0.9s; }
-  .skill-8 { animation-delay: 1s; }
+  .skill-1 { animation-delay: 0.4s; }
+  .skill-2 { animation-delay: 0.6s; }
+  .skill-3 { animation-delay: 0.8s; }
+  .skill-4 { animation-delay: 1s; }
+  .skill-5 { animation-delay: 1.2s; }
+  .skill-6 { animation-delay: 1.4s; }
+  .skill-7 { animation-delay: 1.6s; }
+  .skill-8 { animation-delay: 1.8s; }
+  .skill-9 { animation-delay: 2s; }
+  .skill-10 { animation-delay: 2.2s; }
+  .skill-11 { animation-delay: 2.4s; }
+
+  /* .skill-0:hover { color: rgb(240,216,29); }
+  .skill-name-0:hover { color: rgb(240,216,29); } */
   
+  .skill-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    animation: disperse 1.5s forwards;
+    opacity: 0;
+    transform: scale(0);
+  }
+
   @keyframes disperse {
     0% {
       opacity: 0;
@@ -57,7 +74,7 @@
   
   /* Additional global styles for your skill text */
   .my-skills-container p {
-    color: #333; /* Text color, adjust as needed */
+    color: white; /* Text color, adjust as needed */
     font-size: 1rem; /* Text size, adjust as needed */
   }
   

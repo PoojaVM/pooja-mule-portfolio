@@ -3,6 +3,7 @@ import { Nav, Navbar, Offcanvas } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import { Logo } from "../assets";
 import { Link, Outlet, useLocation } from "react-router-dom";
+import "./Layout.css";
 
 const Layout = () => {
   const location = useLocation();
@@ -31,13 +32,7 @@ const Layout = () => {
           <Navbar.Brand
             as={Link}
             to="/home#intro"
-            style={{
-              color: "#EFEFEF",
-              fontFamily: "cursive",
-              fontSize: "2rem",
-              position: "absolute",
-              // transform: "rotate(-10deg)",
-            }}
+            className="logo"
           >
             Pooja Mule
             {/* <img src={Logo} alt="Pooja Mule" style={{ height: "4rem", width: "7rem", marginRight: "0.5rem" }} /> */}
@@ -55,11 +50,11 @@ const Layout = () => {
             </Offcanvas.Header> */}
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link as={Link} to="/home#about-me" style={{ color: "#EFEFEF" }}>About me</Nav.Link>
-              <Nav.Link as={Link} to="/home#work-experience" style={{ color: "#EFEFEF" }}>Work Experience</Nav.Link>
-              <Nav.Link as={Link} to="/home#projects" style={{ color: "#EFEFEF" }}>Projects</Nav.Link>
-              <Nav.Link as={Link} to="/home#my-skills" style={{ color: "#EFEFEF" }}>Skills</Nav.Link>
-              <Nav.Link as={Link} to="/home#contact-me" style={{ color: "#EFEFEF" }}>Contact Me</Nav.Link>
+              <Nav.Link as={Link} to="/home#about-me" className="nav-item">About me</Nav.Link>
+              <Nav.Link as={Link} to="/home#work-experience" className="nav-item">Work Experience</Nav.Link>
+              <Nav.Link as={Link} to="/home#projects" className="nav-item">Projects</Nav.Link>
+              <Nav.Link as={Link} to="/home#my-skills" className="nav-item">Skills</Nav.Link>
+              <Nav.Link as={Link} to="/home#contact-me" className="nav-item">Contact Me</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

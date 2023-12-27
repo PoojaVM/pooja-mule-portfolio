@@ -13,14 +13,13 @@ import {
     DiJavascript1,
     DiAngularSimple,
 } from 'react-icons/di';
-import { FaReact } from 'react-icons/fa';
 import './MySkills.css';
 
 const skills = [
   { name: 'Javascript', icon: <DiJavascript1 /> },
   { name: 'Python', icon: <DiPython /> },
   { name: 'ReactJS', icon: <DiReact /> },
-  { name: 'React Native', icon: <FaReact /> },
+  { name: 'React Native', icon: <DiReact /> },
   { name: 'AngularJS', icon: <DiAngularSimple /> },
   { name: 'NodeJS', icon: <DiNodejs /> },
   { name: 'Postgres', icon: <DiPostgresql /> },
@@ -41,8 +40,8 @@ const MySkills = () => {
           <Col key={idx} xs={6} md={4} lg={3} className="my-2">
             <div className={`skill-icon skill-${idx}`}>
               {skill.icon}
+              <p className={`skill-name skill-name-${idx}`}>{skill.name}</p>
             </div>
-            <p style={{color:"white"}}>{skill.name}</p>
           </Col>
         ))}
       </Row>

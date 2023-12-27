@@ -45,6 +45,7 @@ html {
     width: 550px;
     height: 550px;
     border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6);
   }
   
   @keyframes fadeIn {
@@ -61,4 +62,35 @@ html {
     from { transform: scale(0); }
     to { transform: scale(1); }
   }
-  
+
+
+.linkedin-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.linkedin-icon:hover {
+  transform: scale(1.2); /* Increase the size of the logo */
+  color: rgb(10,102,194);
+}
+
+.github-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.github-icon:hover {
+  transform: scale(1.2); /* Increase the size of the logo */
+  color: rgb(242,88,59);
+}
+
+.stackoverflow-icon {
+  font-size: 2rem;
+  color: white;
+}
+
+.stackoverflow-icon:hover {
+  transform: scale(1.2); /* Increase the size of the logo */
+  color: rgb(244,128,37);
+}
+

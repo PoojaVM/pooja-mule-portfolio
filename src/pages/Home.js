@@ -16,20 +16,20 @@ const Home = () => {
       <>
         <div className="social-media-icons position-fixed top-50 start-10 translate-middle-y">
           <a href="https://www.linkedin.com/in/pooja-mule-77421092/" target="_blank" rel="noreferrer" className="d-block mb-2">
-            <i className="bi bi-linkedin" style={{ fontSize: '2rem', color: "white" }}></i>
+            <i className="bi bi-linkedin linkedin-icon"></i>
           </a>
           <a href="https://github.com/PoojaVM" target="_blank" rel="noreferrer" className="d-block mb-2">
-            <i className="bi bi-github" style={{ fontSize: '2rem', color: "white" }}></i>
+            <i className="bi bi-github github-icon"></i>
           </a>
           <a href="https://stackoverflow.com/users/5939393/pooja-mule" target="_blank" rel="noreferrer" className="d-block mb-2">
-            <i className="bi bi-stack-overflow" style={{ fontSize: '2rem', color: "white" }}></i>
+            <i className="bi bi-stack-overflow stackoverflow-icon"></i>
           </a>
         </div>
       <div className="home-container">
         <div id="intro" className="intro-container">
           <div className="greeting-section animated-section">
             <h1 className="greeting-header">Hello! Nice to meet you.</h1>
-            <p className="greeting-text">I am Pooja. A graduate student and a full stack developer with over 5 years of work experience.</p>
+            <p className="greeting-text">I am Pooja – a graduate student and an experienced full-stack developer with a robust background spanning over 5 years in the industry.</p>
           </div>
           <div className="profile-picture-section animated-picture">
             <img src={ProfilePicture} alt="Pooja Mule" className="profile-picture" />
